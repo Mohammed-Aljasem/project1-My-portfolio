@@ -1,0 +1,147 @@
+/*-----------------------------------------my variables---------------------------------------------------*/
+
+:root {
+  /*----colors----*/
+
+  --color1: #5111f3;
+  --color2: #58534f;
+  --color3: #363748;
+  --color4: #f9f9fa;
+  --color5: #0a0a0b;
+
+  /*----sizes v1----*/
+
+  --siz-1: 0.3rem;
+  --siz-2: 0.5rem;
+  --siz-3: 0.75rem;
+  --siz-4: 1rem;
+  --siz-5: 1.25rem;
+  --siz-6: 1.5rem;
+  --siz-7: 1.75rem;
+  --siz-8: 2rem;
+
+  /*----sizes v2----*/
+
+  --sic-1: 0.3em;
+  --sic-2: 0.5em;
+  --sic-3: 0.75em;
+  --sic-4: 1em;
+  --sic-5: 1.25em;
+  --sic-6: 1.5em;
+  --sic-7: 1.75em;
+  --sic-8: 2em;
+
+  /*----sizes v3 ----*/
+}
+
+/*---------------------------------------this style public--------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+/*-----------------------------------this style for main container------------------------------------------*/
+#container {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+   "navbar-1 navbar-1"
+   "home-2 home-2"
+   "exe exe"
+   "footer footer"
+
+}
+.header {
+ grid-area: navbar-1;
+}
+.section-2 {
+  grid-area:home-2;
+  
+}
+.main-2 {
+  grid-area: exe;
+}
+.footer {
+  grid-area: footer;
+}
+
+/*-------------------------------this style for first child header--------------------------------------------*/
+
+
+/*----------------------------this style for second child container-------------------------------------------*/
+.section-2 .cards  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.section-2 .cards div {
+  display: block;
+  height: 75vh;
+  background-color: #0099ff;
+  flex-direction: row;
+  flex-align: center;
+  flex-basis: 25rem;
+  margin: var(--siz-8);
+  border-radius: var(--siz-5);
+  text-align: center;
+  color: var(--color4);
+  padding: var(--siz-3);
+  justify-items: center;
+}
+
+.section-2 .cards div:hover{
+  transform: translateY(-10px);
+  transition: 0.5s;
+  background: linear-gradient(to bottom, #42a0ff 0%, #ff99cc 100%);
+}
+
+.section-2 div .card-1 img {
+  width: 8rem;
+  height: 8rem;
+  margin: var(--siz-3);
+
+}
+.section-2 div .card-2 img {
+  width: 8rem;
+  height: 8rem;
+  background-color: #d5f1fe;
+  margin: var(--siz-3);
+  border-radius: 50%;
+
+}
+.section-2 div .card-3 img {
+  width: 8rem;
+  height: 8rem;
+  margin: var(--siz-3);
+  background-color: #d5f1fe;
+  border-radius: 50%;
+}
+
+.section-2 .cards .card-1 img:hover {
+  transition: 0.7s;
+border: var(--color4) var(--siz-2) dotted;
+}
+.seemore {
+  background-color: var(--color4);
+    color: var(--color5);
+    padding: var(--siz-1) var(--siz-4);
+    text-decoration: none;
+    border-radius: var(--siz-4);
+  }
+  .section-2 h1 {
+    width: 100%;
+    color: var(--color3);
+    
+    margin-top: var(--siz-6);
+  }
+  .section-2 {
+    text-align: center;
+  }
+  
+
+/*--------------------------------this style third child container--------------------------------------------*/
+
+
+/*--------------------------------this style fourth child container--------------------------------------------*/
